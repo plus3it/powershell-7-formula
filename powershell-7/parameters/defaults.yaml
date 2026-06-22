@@ -5,6 +5,7 @@
 ---
 values:
   config:
+    enforce_hardening: ''
     repo_rpm_name: ''
     repo_rpm_uri: ''
     theme:
