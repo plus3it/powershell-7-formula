@@ -42,9 +42,9 @@ Configure System Execution Policy And Logging:
   file.managed:
     - contents: |
         {
-          "ExecutionPolicy": "RemoteSigned",
           "LogChannels": "Operational",
-          "LogLevel": "Normal"
+          "LogLevel": "Normal",
+          "Microsoft.PowerShell:ExecutionPolicy": "RemoteSigned"
         }
     - makedirs: True
     - name: '{{ base_root }}/powershell.config.json'
